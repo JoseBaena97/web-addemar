@@ -1,0 +1,102 @@
+:root {
+  --primary-green: #2f6f4f;
+  --light-green: #5f8f74;
+  --soft-bg: #f4f7f5;
+  --off-white: #fdfdfb;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--off-white);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(47,111,79,0.85), rgba(47,111,79,0.85)),
+              url('../assets/images/img_hero_bg.png') center/cover;
+  color: white;
+  padding-top: 80px;
+}
+
+.section-title {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.bg-soft {
+  background-color: var(--soft-bg);
+}
+
+.btn-success {
+  background-color: white;
+  border: none;
+  color: var(--primary-green);
+}
+
+.btn-success:hover {
+  background-color: #f0f0f0;
+  color: var(--primary-green);
+}
+
+.navbar {
+  background-color: var(--off-white);
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--primary-green);
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+}
+
+.footer {
+  background-color: var(--primary-green);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-green);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 32px;
+}
+
+.social-icon:hover {
+  background-color: var(--light-green);
+  transform: scale(1.1);
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon i {
+  color: white;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+}
+
