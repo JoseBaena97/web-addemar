@@ -12,6 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* ESTILOS DEL HERO */
 .hero-section {
   height: 100vh;
   background: linear-gradient(rgba(47,111,79,0.85), rgba(47,111,79,0.85)),
@@ -40,6 +41,7 @@ body {
   color: var(--primary-green);
 }
 
+/* ESTILOS DEL NAVBAR */
 .navbar {
   background-color: var(--off-white);
 }
@@ -80,6 +82,7 @@ body {
   background-color: var(--primary-green);
 }
 
+/* ESTILOS DE CONTACTO */
 .social-links {
   display: flex;
   justify-content: center;
@@ -119,3 +122,58 @@ body {
   }
 }
 
+/* Estilos del Calendario de eventos */
+.event-item {
+    background-color: #fff;
+    border-left: 4px solid var(--primary-green);
+    transition: transform 0.2s ease;
+}
+
+.event-item:hover {
+    transform: translateX(5px);
+}
+
+.event-date-box {
+    background-color: var(--soft-bg);
+    color: var(--primary-green);
+    padding: 10px;
+    min-width: 80px;
+    border-radius: 8px;
+}
+
+.event-date-box .day {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.event-date-box .month {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-outline-success {
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 576px) {
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .event-date-box {
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .event-action {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
